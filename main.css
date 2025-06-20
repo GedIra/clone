@@ -1,7 +1,7 @@
 body{
     margin: 0;
     height: 600vh;
-    overflow: scroll;
+    overflow-x: hidden;
 }
 .container {
   padding: auto;
@@ -96,33 +96,33 @@ body{
     top: 300px;
 }
 
-.round2{
+.round2 {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 70px;
     width: 80%;
-    justify-content: space-between;
     padding: 10px;
     border: 2px solid;
     border-radius: 10px;
-    margin-left: 150px;
-    text-align: center;
+    margin: 40px auto;
     color: white;
     background-color: #191e3b;
 }
 
-#icon{
+#icon {
     width: 70px;
     height: 70px;
     background-color: white;
     border-radius: 50%;
-
 }
-.register{
+
+.register {
     width: 70px;
     height: 40px;
     background-color: azure;
-
 }
+
 .hold{
     display: flex;
     margin-top: 10px;
@@ -153,5 +153,80 @@ body{
     color: white;
     background-color: #1668e3;
     flex: 1; /* fills remaining space */
+}
+
+/* #accommodation{
+    margin-left: 135px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.items{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-left: 135px;
+    overflow: hidden;
+    
+
+}
+
+.card{
+    position: absolute;
+    background-image: url("images/pic.jpeg");
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
+    height: 250px;
+    border: solid 4px black;
+    border-radius: 10px;
+    width: 200px;
+    background-repeat: no-repeat;
+} */
+
+
+.accommodation {
+    padding: 40px;
+    background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 10px 70px 0 100px;
+}
+
+.accommodation h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.acc-card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; 
+
+}
+
+.acc-card {
+    min-width: 220px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.acc-card p {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
 }
 
