@@ -120,7 +120,11 @@ body{
 .register {
     width: 70px;
     height: 40px;
-    background-color: azure;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #1668e3;
 }
 
 .hold{
@@ -154,36 +158,6 @@ body{
     background-color: #1668e3;
     flex: 1; /* fills remaining space */
 }
-
-/* #accommodation{
-    margin-left: 135px;
-    margin-top: 20px;
-    font-size: 30px;
-}
-
-.items{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin-left: 135px;
-    overflow: hidden;
-    
-
-}
-
-.card{
-    position: absolute;
-    background-image: url("images/pic.jpeg");
-    background-position: center;
-    background-size: cover;
-    margin-left: 20px;
-    height: 250px;
-    border: solid 4px black;
-    border-radius: 10px;
-    width: 200px;
-    background-repeat: no-repeat;
-} */
-
 
 .accommodation {
     padding: 40px;
